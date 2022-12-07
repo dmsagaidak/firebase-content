@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import {Route, Routes} from "react-router-dom";
 import PageElement from "./containers/PageElement/PageElement";
 import Home from "./containers/Home/Home";
+import Admin from "./containers/Admin/Admin";
 
 const pageNames = [
   {pageName: 'about'},
@@ -36,10 +37,10 @@ function App() {
             )}
             />
           ))}
-          {/*<Route*/}
-          {/*path="/pages/:pageName"*/}
-          {/*element={<PageElement/>}*/}
-          {/*/>*/}
+          <Route
+          path="/pages/admin"
+          element={<Admin/>}
+          />
         </Routes>
       </main>
     </>
